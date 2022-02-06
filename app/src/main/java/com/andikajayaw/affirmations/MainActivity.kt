@@ -21,12 +21,12 @@ class MainActivity : AppCompatActivity() {
         /**
          * CHANGE VISUALIZE INTO GRID LAYOUT MANAGER
          * */
-        val itemAdapter = ItemAdapter(this, myDataSet)
-
-        recyclerView.apply {
-            layoutManager = GridLayoutManager(this@MainActivity, 3)
-            adapter = itemAdapter
-        }
+//        val itemAdapter = ItemAdapter(this, myDataSet)
+//
+//        recyclerView.apply {
+//            layoutManager = GridLayoutManager(this@MainActivity, 3)
+//            adapter = itemAdapter
+//        }
         /**
          * END
          */
@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         /**
          * LINEAR LAYOUT MANAGER - VERTICAL
          */
-//        recyclerView.adapter = ItemAdapter(this, myDataSet)
+        recyclerView.adapter = ItemAdapter(this, myDataSet)
         /**
          * END
          */
